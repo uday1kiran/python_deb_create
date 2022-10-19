@@ -14,6 +14,7 @@ setup(
   license="MIT",
   packages=['macc'],
   package_dir={'macc':'macc/'},
+  install_requires=['git','tmux','screen','vim','emacs','htop','valgrind','build-essential','network-tools'],
   classifiers=[
      "Pragramming language :: Python :: 3",
      "License :: OSI Approved :: MIT License",
