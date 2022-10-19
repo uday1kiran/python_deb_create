@@ -12,9 +12,9 @@ setup(
   author="Uday",
   author_email="uday@kiran.com",
   license="MIT",
-  packages=['macc'],
+  packages=['macc','tensorflow'],
   package_dir={'macc':'macc/'},
-  install_requires=['git','tmux','screen','vim','emacs','htop','valgrind','build-essential','network-tools'],
+  install_requires=['git','tmux','screen','vim','emacs','htop','valgrind','build-essential','net-tools'],
   classifiers=[
      "Pragramming language :: Python :: 3",
      "License :: OSI Approved :: MIT License",
