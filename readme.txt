@@ -16,3 +16,6 @@ python3 setup.py --comamnd-packages=stdeb.command bdist_deb
 to test install:
 sudo dpkg -i python3-macc_1.0.0-1_all.deb
 macc -h
+
+links:
+- https://python-packaging.readthedocs.io/en/latest/dependencies.html
