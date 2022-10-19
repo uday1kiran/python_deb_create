@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Applicaiton
+Name=macc
+Comment=MAC address changer DEB package
+Exec=macc
+Icon=/usr/share/icons/gnome/48x48/apps/file-manager.png
+Categories=Utility;
+Terminal=true
+StartupNotify=true
+StartupWMClass=macc
+
