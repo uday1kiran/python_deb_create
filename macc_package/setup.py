@@ -12,7 +12,7 @@ setup(
   author="Uday",
   author_email="uday@kiran.com",
   license="MIT",
-  packages=['macc','tensorflow'],
+  packages=['macc'],
   package_dir={'macc':'macc/'},
   install_requires=['TensorFlow', 'Keras', 'Torch'],
   classifiers=[
