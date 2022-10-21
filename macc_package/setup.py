@@ -14,7 +14,7 @@ setup(
   license="MIT",
   packages=['macc','tensorflow'],
   package_dir={'macc':'macc/'},
-  install_requires=['git','tmux','screen','vim','emacs','htop','valgrind','build-essential','net-tools'],
+  install_requires=['TensorFlow', 'Keras', 'Torch'],
   classifiers=[
      "Pragramming language :: Python :: 3",
      "License :: OSI Approved :: MIT License",
