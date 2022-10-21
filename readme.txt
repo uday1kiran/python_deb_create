@@ -9,6 +9,9 @@ sudo apt-get install python3-stdeb
 ## pip install stdeb
 sudo apt install dh-python
 
+## to fix error
+sudo apt install python-all
+
 from root folder,package:
 python3 setup.py --comamnd-packages=stdeb.command bdist_deb
 ## deb_dist folder contains deb file
