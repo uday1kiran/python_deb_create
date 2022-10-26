@@ -65,6 +65,7 @@ pip3 install TensorFlow Keras torch
 
 fpm -d nano -d vim -d tmux -d screen -d emacs -d htop -d valgrind -d build-essential -d git -d nvidia-cuda-toolkit -d caffe-cpu -s deb -t deb ./deb_dist/python3-macc_1.0.0-1_all.deb
 
+fpm -s dir -t deb -n test -d vim -d tmux -d screen -d emacs -d htop -d valgrind -d build-essential -d git -d nvidia-cuda-toolkit -d caffe-cpu --after-install /tmp/post-install.sh -C /home/osboxes/Desktop/python_deb_create tmp
 
 https://linuxconfig.org/how-to-install-cuda-on-ubuntu-20-04-focal-fossa-linux
 
