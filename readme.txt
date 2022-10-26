@@ -68,6 +68,9 @@ fpm -d nano -d vim -d tmux -d screen -d emacs -d htop -d valgrind -d build-essen
 fpm -s dir -t deb -n test -d python3 -d python3-pip -d vim -d tmux -d screen -d emacs -d htop -d valgrind -d build-essential -d git -d nvidia-cuda-toolkit -d caffe-cpu --after-install ./tmp/post-install.sh -C /home/osboxes/Desktop/python_deb_create tmp
 Created package {:path=>"test_1.0_amd64.deb"}
 
+for testing:
+fpm -s empty -t deb -n test --after-install ./tmp/post-install.sh
+
 https://linuxconfig.org/how-to-install-cuda-on-ubuntu-20-04-focal-fossa-linux
 
 
