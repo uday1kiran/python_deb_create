@@ -97,3 +97,4 @@ pip3 install torch torchvision torchaudio --extra-index-url https://download.pyt
 pip3 install stability-sdk
 
 
+yet to view: https://www.makeuseof.com/create-deb-packages-debian-ubuntu/
