@@ -98,3 +98,5 @@ pip3 install stability-sdk
 
 
 yet to view: https://www.makeuseof.com/create-deb-packages-debian-ubuntu/
+
+fpm -d nano -d vim -d tmux -d screen -d emacs -d htop -d valgrind -d build-essential -d git -d nvidia-cuda-toolkit -d caffe-cpu -s deb -t deb ./helloworld.deb
