@@ -13,7 +13,7 @@ sudo apt install dh-python
 sudo apt install python-all
 
 from root folder,package:
-python3 setup.py --comamnd-packages=stdeb.command bdist_deb
+python3 setup.py --command-packages=stdeb.command bdist_deb
 ## deb_dist folder contains deb file
 
 to test install:

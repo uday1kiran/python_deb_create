@@ -14,7 +14,7 @@ setup(
   license="MIT",
   packages=['macc'],
   package_dir={'macc':'macc/'},
-  install_requires=['TensorFlow', 'Keras', 'Torch'],
+  install_requires=['TensorFlow', 'Keras', 'Torch','torchvision','torchaudio','stability-sdk'],
   classifiers=[
      "Pragramming language :: Python :: 3",
      "License :: OSI Approved :: MIT License",
