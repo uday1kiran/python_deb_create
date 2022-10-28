@@ -1,4 +1,3 @@
-#!/bin/bash
 echo "---Installing Python Packages---"
 mkdir -p /tmp/testing
 pip3 install TensorFlow Keras
