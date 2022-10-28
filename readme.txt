@@ -83,3 +83,17 @@ fpm:
 https://www.digitalocean.com/community/tutorials/how-to-use-fpm-to-easily-create-packages-in-multiple-formats
 https://fpm.readthedocs.io/en/v1.14.0/cli-reference.html
 https://stackoverflow.com/questions/30802265/deb-package-creation-using-fpm-with-build-dependencies
+
+
+only dpkg tools to install with postinst:
+----
+https://www.intracto.com/en-be/blog/creating-debianubuntu-deb-packages
+postinst:
+----
+echo "testing install"
+mkdir -p /tmp/testing
+pip3 install TensorFlow Keras
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+pip3 install stability-sdk
+
+
