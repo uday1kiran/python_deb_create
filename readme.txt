@@ -88,6 +88,7 @@ https://stackoverflow.com/questions/30802265/deb-package-creation-using-fpm-with
 only dpkg tools to install with postinst:
 ----
 https://www.intracto.com/en-be/blog/creating-debianubuntu-deb-packages
+https://serverfault.com/questions/1055356/how-to-add-multiple-dependencies-to-debian-package
 postinst:
 ----
 echo "testing install"
@@ -102,3 +103,5 @@ yet to view: https://www.makeuseof.com/create-deb-packages-debian-ubuntu/
 fpm -d nano -d vim -d tmux -d screen -d emacs -d htop -d valgrind -d build-essential -d git -d nvidia-cuda-toolkit -d caffe-cpu -s deb -t deb ./helloworld.deb
 
 dpkg-deb --build python-apt-dependencies/
+
+
