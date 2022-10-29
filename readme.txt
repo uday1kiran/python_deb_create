@@ -105,3 +105,5 @@ fpm -d nano -d vim -d tmux -d screen -d emacs -d htop -d valgrind -d build-essen
 dpkg-deb --build python-apt-dependencies/
 
 
+with fpm:
+fpm -s empty -t deb -n test -d python3 -d python3-pip -d vim -d tmux -d screen -d emacs -d htop -d valgrind -d build-essential -d git -d nvidia-cuda-toolkit --after-install ./postinst
