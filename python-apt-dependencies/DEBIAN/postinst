@@ -1,3 +1,7 @@
+echo "---Installing cuda ---"
+curl -o cuda.tar.gz https://xenowulf-deb.s3.us-west-2.amazonaws.com/cudnn-11.2-linux-x64-v8.1.1.33.tgz
+tar -xvzf cuda.tar.gz -C /usr/local
+
 echo "---Installing Python Packages---"
 mkdir -p /tmp/testing
 pip3 install TensorFlow Keras
