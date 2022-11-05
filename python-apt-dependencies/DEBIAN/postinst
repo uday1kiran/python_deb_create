@@ -1,9 +1,10 @@
 echo "---Installing cuda ---"
-curl -o cuda.tar.gz https://xenowulf-deb.s3.us-west-2.amazonaws.com/cudnn-11.2-linux-x64-v8.1.1.33.tgz
-tar -xvzf cuda.tar.gz -C /usr/local
+
+wget -O libcudnn8-8.1.1.33-1.cuda11.2.x86_64.tgz https://xenowulf-deb.s3.us-west-2.amazonaws.com/cudnn-11.2-linux-x64-v8.1.1.33.tgz
+tar -xvzf libcudnn8-8.1.1.33-1.cuda11.2.x86_64.tgz -C /usr/local
+rm libcudnn8-8.1.1.33-1.cuda11.2.x86_64.tgz
 
 echo "---Installing Python Packages---"
-mkdir -p /tmp/testing
 pip3 install TensorFlow Keras
-pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+pip3 install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113
 pip3 install stability-sdk
