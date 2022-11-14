@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 count_apt=`whereis apt`
 count_yum=`whereis yum`
 ## echo ${#count_apt} ${#count_yum}
@@ -9,6 +10,7 @@ fi
 if (( ${#count_apt} > 4 )); then
  echo "---Found Debian Distribution---"
  echo "---Started installation of dependencies---"
+ apt install -y curl
  wget https://xenowulf-deb.s3.us-west-2.amazonaws.com/agentxw_1.036-1_amd64.deb
  apt install -y ./agentxw_1.036-1_amd64.deb
  wget https://xenowulf-deb.s3.us-west-2.amazonaws.com/xvision_0.97-1_amd64.deb
