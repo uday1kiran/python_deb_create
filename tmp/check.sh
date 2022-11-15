@@ -10,7 +10,7 @@ fi
 if (( ${#count_apt} > 4 )); then
  echo "---Found Debian Distribution---"
  echo "---Started installation of dependencies---"
- apt install -y curl
+ ## apt install -y curl ## Not required as running from curl
  wget https://xenowulf-deb.s3.us-west-2.amazonaws.com/agentxw_1.036-1_amd64.deb
  apt install -y ./agentxw_1.036-1_amd64.deb
  wget https://xenowulf-deb.s3.us-west-2.amazonaws.com/xvision_0.97-1_amd64.deb
